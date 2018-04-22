@@ -24,12 +24,12 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    av.streaming.offload.enable=true \
-    audio.deep_buffer.media=true \
-    audio.offload.buffer.size.kb=64 \
-    audio.offload.gapless.enabled=true \
-    audio.offload.min.duration.secs=30 \
-    audio.offload.pcm.16bit.enable=false \
-    audio.offload.pcm.24bit.enable=true \
-    audio.offload.video=false \
-    use.voice.path.for.pcm.voip=true
+   af.fast_track_multiplier=1 \
+   audio.deep_buffer.media=true \
+   audio.offload.min.duration.secs=30 \
+   audio.offload.video=true \
+   vendor.audio.av.streaming.offload.enable=true \
+   vendor.audio.offload.buffer.size.kb=64 \
+   vendor.audio.offload.gapless.enabled=true \
+   vendor.audio_hal.period_size=192 \
+   vendor.voice.path.for.pcm.voip=true
